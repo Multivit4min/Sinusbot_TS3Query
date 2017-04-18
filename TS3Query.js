@@ -6,10 +6,11 @@ function TS3Query(config) {
 	self.ignorelines = 2
 	self.config = {
 		host: config.host || "127.0.0.1",
-		port: config.port || 10011
+		port: config.port || 10011,
+		net: config.net   || require("net")
 	}
 
-	self.conn = net.connect({host: self.config.host, port: self.config.port}, function(err) {
+	self.conn = self.config.net.connect({host: self.config.host, port: self.config.port}, function(err) {
 		self.triggerEvents("connect")
 	})
 
