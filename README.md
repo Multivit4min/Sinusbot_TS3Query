@@ -7,7 +7,7 @@ The usage is nearly the same as the above mentioned Library
 
 Here is a simple example:
 
-```
+```JavaScript
 var engine = require("engine") 
 var ts3 = new TS3Query({ host: "127.0.0.1", port: 9987})
 
@@ -34,8 +34,8 @@ ts3.on("connect", function() {
 ```
 
 
-Valid events are:
-connect -> gets fired when the connection to the TCP Socket was successfull
-close -> gets fired when the connection to the TeamSpeak gets closed
-error
-notify<ts3event> -> gets called when you receive a TeamSpeak Event
+__Valid events are:__<br/>
+connect -> gets fired when the connection to the TCP Socket was successfull<br/>
+close -> gets fired when the connection to the TeamSpeak gets closed<br/>
+error<br/>
+notify<ts3event> -> gets called when you receive a TeamSpeak Event<br/>
