@@ -32,3 +32,10 @@ ts3.on("connect", function() {
   })
 })
 ```
+
+
+Valid events are:
+connect -> gets fired when the connection to the TCP Socket was successfull
+close -> gets fired when the connection to the TeamSpeak gets closed
+error
+notify<ts3event> -> gets called when you receive a TeamSpeak Event
