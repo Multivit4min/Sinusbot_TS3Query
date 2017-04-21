@@ -124,7 +124,7 @@ function TS3Query(config) {
 		}
 		if ("params" in query) {
 			for (var k in query.params) {
-				if (typeof query.params[k] == "object" && Array.isArray(query.params[k])) {
+				if (Array.isArray(query.params[k])) {
 					cmd += " "
 					query.params[k].forEach(function(p, i) {
 						cmd += k+"="+self.escape(p)
