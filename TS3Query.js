@@ -29,7 +29,7 @@ function TS3Query(config) {
 	}
 
 	self.unescape = function(s) {
-		s = String(s)
+		var s = String(s)
 		s = s.replace(/\\s/g,  " ")
 		s = s.replace(/\\p/g,  "|")
 		s = s.replace(/\\n/g,  "\n")
